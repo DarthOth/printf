@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _putchar - function name
- * @c: function param
- * Return: return value
+ * _putchar - Writes the character c to the standard output stream (stdout)
+ * @c: The character to print
+ *
+ * Return: Return value
  */
 
 int _putchar(char c)
