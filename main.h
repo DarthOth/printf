@@ -15,5 +15,17 @@ int printf_c(va_list list);
 int printf_s(va_list list);
 int printf_p(void);
 
+/**
+ * struct format - converter for printf
+ * @ph: type char pointer of the specifier
+ * @function: function for the conversion specifier
+ *
+ */
+
+typedef struct format
+{
+	char *ph;
+	int (*function)():
+} convert;
 
 #endif
