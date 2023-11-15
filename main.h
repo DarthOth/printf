@@ -14,6 +14,8 @@ int _strlen_const(const char *s);
 int printf_c(va_list list);
 int printf_s(va_list list);
 int printf_p(void);
+int printf_i(va_list list);
+int printf_d(va_list list);
 
 /**
  * struct format - converter for printf
