@@ -8,16 +8,15 @@
 
 int printf_d(va_list list)
 {
-	int i, n, number, last = n % 10, d, m = 1, ex = 1;
+	int i = va_arg(list, int), number, last = i % 10, d, m = 1, ex = 1;
 
-	n = va_arg(list, int);
-	n = n / 10;
-	number = n;
+	i = i / 10;
+	number = i;
 	if (last < 0)
 	{
 		_putchar('-');
 		number = -number;
-		n = -n;
+		i = -i;
 		last = -last;
 		m++;
 	}
@@ -28,7 +27,7 @@ int printf_d(va_list list)
 			ex = ex * 10;
 			number = number / 10;
 		}
-		number = n;
+		number = i;
 		while (ex > 0)
 		{
 			d = number / ex;
@@ -40,9 +39,4 @@ int printf_d(va_list list)
 	}
 	_putchar(last + '0');
 	return (m);
-
-
-	c = va_arg(list, int);
-	_putchar(c);
-	return (1);
 }

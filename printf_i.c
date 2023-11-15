@@ -8,7 +8,7 @@
 
 int printf_i(va_list list)
 {
-	int n, number, last = n % 10, d, i = 1, ex = 1;
+	int n = va_arg(list, int), number, last = n % 10, d, i = 1, ex = 1;
 
 	n = n / 10;
 	number = n;
