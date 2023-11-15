@@ -9,7 +9,7 @@ int _strlen(char *s);
 int _strlen_const(const char *s);
 int printf_c(va_list list);
 int printf_s(va_list list);
-int printf_%(va_list list);
+int printf_p(void);
 
 
 #endif
