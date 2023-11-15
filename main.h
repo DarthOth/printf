@@ -25,7 +25,7 @@ int printf_p(void);
 typedef struct format
 {
 	char *ph;
-	int (*function)():
+	int (*function)();
 } convert;
 
 #endif
