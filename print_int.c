@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * printf_int - Prints an integer value
+ * print_int - Prints an integer value
  * @args: The va_list containing the integer to print
  *
  * Return: The number of characters printed
  */
 
-int printf_int(va_list args)
+int print_int(va_list args)
 {
 	int a = va_arg(args, int);
 	int num, last = a % 10, digit, exp = 1;
@@ -49,13 +49,13 @@ int printf_int(va_list args)
 #include "main.h"
 
 /**
- * printf_dec - prints a decimal value
+ * print_dec - prints a decimal value
  * @args: The va_list containing the decimal value to print
  *
  * Return: The number of characters printed
  */
 
-int printf_dec(va_list args)
+int print_dec(va_list args)
 {
 	int a = va_arg(args, int);
 	int num, last = a % 10, digit, exp = 1;
